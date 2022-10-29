@@ -1,0 +1,42 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+
+// Hero Section
+
+.hero {
+    grid-area: hero;
+    height: 100vh;
+    background-image: url('../assets/img/portada.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+        padding: 30px 100px 30px 100px;
+        text-align: center;
+        color: azure;
+        @include mobile-lg(){
+            font-size: 2rem;
+            padding: 30px 100px 30px 100px;
+            text-align: center;
+            color: azure;
+            background-color: $color-seccion-titulo-fondo;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__logo img {
+        padding: 5px;
+        width: 40px;
+    }
+
+}

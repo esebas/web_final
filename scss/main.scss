@@ -1,0 +1,22 @@
+// vinculo los archivos sass
+
+@import "./base/reset";
+@import "./base/typography";
+
+@import "./components/cards";
+@import "./components/hero";
+
+@import "./layout/footer";
+@import "./layout/formats";
+@import "./layout/forms";
+@import "./layout/grid";
+@import "./layout/header";
+@import "./layout/mst";
+@import "./layout/sidebar";
+@import "./pages/contacto";
+
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+//prueba

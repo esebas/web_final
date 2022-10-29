@@ -1,0 +1,70 @@
+
+@import "../utils/variables";
+@import "../utils/mixins";
+
+
+.imper {
+    grid-area: imper;
+    //background-color: aquamarine;
+    padding: 30px 0 30px 0;
+}
+
+.prod {
+    grid-area: prod;
+    //background-color: yellow;
+    padding: 0 0 30px 0;
+}
+
+.video {
+    grid-area: video;
+    //background-color:rgb(173, 173, 235);
+    padding: 30px 0 30px 0;
+}
+
+.revie {
+    grid-area: revie;
+    //background-color: rgb(255, 0, 255);
+}
+
+.left {
+    grid-area: izqui;
+    background-color: rgb(83, 81, 81);
+}
+
+.right {
+    grid-area: dere;
+    background-color: rgb(83, 8, 8);
+}
+
+
+.grid-container {
+    display: grid;
+    gap: 50px;
+    grid-template-areas: 
+    "imper"
+    "revie"
+    "prod"
+    "video"
+    "izqui"
+    "dere"
+    "footer"
+    ;
+
+        @include mobile-md () {
+            grid-template: 
+            "imper imper" auto
+            "revie prod" auto
+            "video video" auto/
+            30% auto;
+        }
+        @include mobile-lg () {
+             grid-template: 
+            "imper imper imper" auto
+            "izqui prod dere" auto
+            "izqui revie dere" auto
+            "izqui video dere" auto/
+            10% auto    10%;
+        }
+    }
+
+    

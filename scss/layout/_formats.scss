@@ -1,0 +1,122 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.titulo__ppal  {
+    //grid-area: titulo;
+    background-color: $color-seccion-titulo-fondo;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $color-seccion-titulo-letra;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-shadow: 0 0.5rem 0.5rem $color-seccion-titulo-sombra;
+
+    @include mobile-sm(){
+        margin-bottom: 2%;
+        font-size: 1.8rem;
+    }
+}
+
+.titulo__sec  {
+    //grid-area: titulo;
+    //background-color: $color-seccion-titulo-fondo;
+    font-size: 1rem;
+    font-weight: 600;
+    color: $color-seccion-titulo-letra;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-shadow: 0 0.5rem 0.5rem $color-seccion-titulo-sombra;
+
+    @include mobile-sm(){
+        margin-bottom: 15px;
+        font-size: 1.2rem;
+    }
+}
+
+.container__video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    //padding: 5px;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px 0 20px;
+  }
+
+
+
+  .margen {
+    margin-left: 5%;
+    margin-right: 5%;
+
+    @include mobile-lg (){
+            margin-left: 10%;
+            margin-right: 10%;    
+    }
+}
+
+.servicios__section {
+  margin: 20px;
+  padding: 10px;
+  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  font-size: 0.8em;
+  flex-direction: row;
+  color: $color-seccion-titulo-letra;
+
+  @include mobile-sm(){
+      font-size: 1em;
+  }
+}
+
+.servicios__section{
+  box-shadow: 0 0.5rem 0.5rem $color-seccion-titulo-sombra;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  gap: 20px;
+  @include mobile-lg () {
+    font-size: 1.3em;
+
+}
+}
+
+.servicios__oferta-2 {
+  background-color: rgba(201, 183, 183, 0.205);
+  padding: 30px;
+  margin-right: 20px;
+}
+
+.servicios__oferta-3 {
+  background-color: rgba(122, 113, 113, 0.445);
+  margin-left: 20px;
+  padding: 30px;
+}
+
+.valora {
+  margin: 10px;
+  font-style:italic;
+}
+.valora__cli{
+  display: inline-block;
+	margin-left: 0.5em;
+	color: gold;
+	width: 50%;
+}
