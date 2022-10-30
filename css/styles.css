@@ -591,6 +591,11 @@ p {
   }
 }
 
+.titulo2 {
+  font-size: 2rem;
+  font-style: normal;
+}
+
 .nav-link,
 .nav-link-2 {
   color: rgb(11, 8, 41);
